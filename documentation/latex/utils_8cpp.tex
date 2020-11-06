@@ -1,0 +1,100 @@
+\hypertarget{utils_8cpp}{}\doxysection{src/utils.cpp File Reference}
+\label{utils_8cpp}\index{src/utils.cpp@{src/utils.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{utils_8cpp_a2e3f533e9c236b4849f65e2629041617}{barycenter}} (double $\ast$$\ast$data, int width, int height, int \&ret\+\_\+w, int \&ret\+\_\+h)
+\item 
+double \mbox{\hyperlink{utils_8cpp_ac7f072187a2093633e6f28b00d44e4f9}{Coefficient1}} (double r, int k)
+\item 
+double \mbox{\hyperlink{utils_8cpp_ae317168f09740330b77dc577b1382fa6}{Coefficient2}} (double r, int k)
+\item 
+double \mbox{\hyperlink{utils_8cpp_ac4d1fb537697f7b499b2e33f7b5408fe}{Coefficient3}} (double r)
+\item 
+double \mbox{\hyperlink{utils_8cpp_a9b2aef5ad40a987ec34df7656333bfe5}{Coefficients}} (int version, double x, float k)
+\item 
+int \mbox{\hyperlink{utils_8cpp_a6bfa0a4f86a1874eb2b526983f773d55}{loss\+\_\+generator\+\_\+translation}} (const std\+::string path\+\_\+pic\+\_\+original, std\+::string path\+\_\+data\+\_\+output, std\+::string label\+\_\+x, std\+::string label\+\_\+y, int order\+\_\+sub\+\_\+pix)
+\item 
+int \mbox{\hyperlink{utils_8cpp_a3867ff20c2092a3640d4f8fadb395906}{correlation\+\_\+generator\+\_\+rot}} (const std\+::string path\+\_\+pic\+\_\+original, std\+::string path\+\_\+data\+\_\+output, std\+::string label\+\_\+x, std\+::string label\+\_\+y, int order\+\_\+sub\+\_\+pix)
+\item 
+double \mbox{\hyperlink{utils_8cpp_ab2fdb0e2deb7fe9f3d0b95930a42ff26}{compute\+\_\+error\+\_\+2\+\_\+rotation}} (const Image \&orig, double angle, int method)
+\item 
+double \mbox{\hyperlink{utils_8cpp_aec9dab1b983de28683e3bfbf4953038c}{time\+\_\+mesure}} (const Image \&orig, double angle, int method, int repeat=5)
+\item 
+double \mbox{\hyperlink{utils_8cpp_a9bb9b14887909efa069c569e303439e9}{opti\+\_\+naive}} (Image \&my\+Image, double p0, double opti\+\_\+rate, int is\+\_\+loss)
+\item 
+double $\ast$ \mbox{\hyperlink{utils_8cpp_a9e087a4ff1bd195dc16e036fc858e23c}{gradient\+\_\+descent}} (double $\ast$p, const Image \&image\+Target, const Image \&image\+Initial, double etha\+\_\+trans, double etha\+\_\+rot, double h\+\_\+trans, double h\+\_\+theta)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{utils_8cpp_a2e3f533e9c236b4849f65e2629041617}\label{utils_8cpp_a2e3f533e9c236b4849f65e2629041617}} 
+\index{utils.cpp@{utils.cpp}!barycenter@{barycenter}}
+\index{barycenter@{barycenter}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{barycenter()}{barycenter()}}
+{\footnotesize\ttfamily void barycenter (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int \&}]{ret\+\_\+w,  }\item[{int \&}]{ret\+\_\+h }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_ac7f072187a2093633e6f28b00d44e4f9}\label{utils_8cpp_ac7f072187a2093633e6f28b00d44e4f9}} 
+\index{utils.cpp@{utils.cpp}!Coefficient1@{Coefficient1}}
+\index{Coefficient1@{Coefficient1}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Coefficient1()}{Coefficient1()}}
+{\footnotesize\ttfamily double Coefficient1 (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_ae317168f09740330b77dc577b1382fa6}\label{utils_8cpp_ae317168f09740330b77dc577b1382fa6}} 
+\index{utils.cpp@{utils.cpp}!Coefficient2@{Coefficient2}}
+\index{Coefficient2@{Coefficient2}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Coefficient2()}{Coefficient2()}}
+{\footnotesize\ttfamily double Coefficient2 (\begin{DoxyParamCaption}\item[{double}]{r,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_ac4d1fb537697f7b499b2e33f7b5408fe}\label{utils_8cpp_ac4d1fb537697f7b499b2e33f7b5408fe}} 
+\index{utils.cpp@{utils.cpp}!Coefficient3@{Coefficient3}}
+\index{Coefficient3@{Coefficient3}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Coefficient3()}{Coefficient3()}}
+{\footnotesize\ttfamily double Coefficient3 (\begin{DoxyParamCaption}\item[{double}]{r }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a9b2aef5ad40a987ec34df7656333bfe5}\label{utils_8cpp_a9b2aef5ad40a987ec34df7656333bfe5}} 
+\index{utils.cpp@{utils.cpp}!Coefficients@{Coefficients}}
+\index{Coefficients@{Coefficients}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{Coefficients()}{Coefficients()}}
+{\footnotesize\ttfamily double Coefficients (\begin{DoxyParamCaption}\item[{int}]{version,  }\item[{double}]{x,  }\item[{float}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_ab2fdb0e2deb7fe9f3d0b95930a42ff26}\label{utils_8cpp_ab2fdb0e2deb7fe9f3d0b95930a42ff26}} 
+\index{utils.cpp@{utils.cpp}!compute\_error\_2\_rotation@{compute\_error\_2\_rotation}}
+\index{compute\_error\_2\_rotation@{compute\_error\_2\_rotation}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{compute\_error\_2\_rotation()}{compute\_error\_2\_rotation()}}
+{\footnotesize\ttfamily double compute\+\_\+error\+\_\+2\+\_\+rotation (\begin{DoxyParamCaption}\item[{const Image \&}]{orig,  }\item[{double}]{angle,  }\item[{int}]{method }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a3867ff20c2092a3640d4f8fadb395906}\label{utils_8cpp_a3867ff20c2092a3640d4f8fadb395906}} 
+\index{utils.cpp@{utils.cpp}!correlation\_generator\_rot@{correlation\_generator\_rot}}
+\index{correlation\_generator\_rot@{correlation\_generator\_rot}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{correlation\_generator\_rot()}{correlation\_generator\_rot()}}
+{\footnotesize\ttfamily int correlation\+\_\+generator\+\_\+rot (\begin{DoxyParamCaption}\item[{const std\+::string}]{path\+\_\+pic\+\_\+original,  }\item[{std\+::string}]{path\+\_\+data\+\_\+output,  }\item[{std\+::string}]{label\+\_\+x,  }\item[{std\+::string}]{label\+\_\+y,  }\item[{int}]{order\+\_\+sub\+\_\+pix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a9e087a4ff1bd195dc16e036fc858e23c}\label{utils_8cpp_a9e087a4ff1bd195dc16e036fc858e23c}} 
+\index{utils.cpp@{utils.cpp}!gradient\_descent@{gradient\_descent}}
+\index{gradient\_descent@{gradient\_descent}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{gradient\_descent()}{gradient\_descent()}}
+{\footnotesize\ttfamily double$\ast$ gradient\+\_\+descent (\begin{DoxyParamCaption}\item[{double $\ast$}]{p,  }\item[{const Image \&}]{image\+Target,  }\item[{const Image \&}]{image\+Initial,  }\item[{double}]{etha\+\_\+trans,  }\item[{double}]{etha\+\_\+rot,  }\item[{double}]{h\+\_\+trans,  }\item[{double}]{h\+\_\+theta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a6bfa0a4f86a1874eb2b526983f773d55}\label{utils_8cpp_a6bfa0a4f86a1874eb2b526983f773d55}} 
+\index{utils.cpp@{utils.cpp}!loss\_generator\_translation@{loss\_generator\_translation}}
+\index{loss\_generator\_translation@{loss\_generator\_translation}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{loss\_generator\_translation()}{loss\_generator\_translation()}}
+{\footnotesize\ttfamily int loss\+\_\+generator\+\_\+translation (\begin{DoxyParamCaption}\item[{const std\+::string}]{path\+\_\+pic\+\_\+original,  }\item[{std\+::string}]{path\+\_\+data\+\_\+output,  }\item[{std\+::string}]{label\+\_\+x,  }\item[{std\+::string}]{label\+\_\+y,  }\item[{int}]{order\+\_\+sub\+\_\+pix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_a9bb9b14887909efa069c569e303439e9}\label{utils_8cpp_a9bb9b14887909efa069c569e303439e9}} 
+\index{utils.cpp@{utils.cpp}!opti\_naive@{opti\_naive}}
+\index{opti\_naive@{opti\_naive}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{opti\_naive()}{opti\_naive()}}
+{\footnotesize\ttfamily double opti\+\_\+naive (\begin{DoxyParamCaption}\item[{Image \&}]{my\+Image,  }\item[{double}]{p0,  }\item[{double}]{opti\+\_\+rate,  }\item[{int}]{is\+\_\+loss }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{utils_8cpp_aec9dab1b983de28683e3bfbf4953038c}\label{utils_8cpp_aec9dab1b983de28683e3bfbf4953038c}} 
+\index{utils.cpp@{utils.cpp}!time\_mesure@{time\_mesure}}
+\index{time\_mesure@{time\_mesure}!utils.cpp@{utils.cpp}}
+\doxysubsubsection{\texorpdfstring{time\_mesure()}{time\_mesure()}}
+{\footnotesize\ttfamily double time\+\_\+mesure (\begin{DoxyParamCaption}\item[{const Image \&}]{orig,  }\item[{double}]{angle,  }\item[{int}]{method,  }\item[{int}]{repeat = {\ttfamily 5} }\end{DoxyParamCaption})}
+

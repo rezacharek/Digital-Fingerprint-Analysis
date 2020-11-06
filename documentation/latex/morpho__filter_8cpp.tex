@@ -1,0 +1,64 @@
+\hypertarget{morpho__filter_8cpp}{}\doxysection{src/morpho\+\_\+filter.cpp File Reference}
+\label{morpho__filter_8cpp}\index{src/morpho\_filter.cpp@{src/morpho\_filter.cpp}}
+{\ttfamily \#include $<$opencv2/opencv.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}morpho\+\_\+filter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{morpho__filter_8cpp_a47d2e26c9b8781b0cd6ee2ef335be03e}{determine\+Threshold}} (double $\ast$$\ast$data, int width, int height)
+\item 
+bool $\ast$$\ast$ \mbox{\hyperlink{morpho__filter_8cpp_aff4124694f2989373f473da56c073eb7}{binarize\+Data}} (double $\ast$$\ast$data, int width, int height)
+\item 
+bool $\ast$$\ast$ \mbox{\hyperlink{morpho__filter_8cpp_ade12bae79aa395aa32c66019a4cb5bba}{erosion}} (bool $\ast$$\ast$data, int width, int height, Structuring\+Element \&selem)
+\item 
+bool $\ast$$\ast$ \mbox{\hyperlink{morpho__filter_8cpp_a19313315e1e6d1fc430db85bd2c2757a}{dilation}} (bool $\ast$$\ast$data, int width, int height, Structuring\+Element \&selem)
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{morpho__filter_8cpp_ad1e9c55774c6a7d0ea2293f931f3f727}{erosion}} (double $\ast$$\ast$data, int width, int height, Structuring\+Element \&selem)
+\item 
+double $\ast$$\ast$ \mbox{\hyperlink{morpho__filter_8cpp_a4038bd3b5022c056ae8f2d1314765a7a}{dilation}} (double $\ast$$\ast$data, int width, int height, Structuring\+Element \&selem)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{morpho__filter_8cpp_aff4124694f2989373f473da56c073eb7}\label{morpho__filter_8cpp_aff4124694f2989373f473da56c073eb7}} 
+\index{morpho\_filter.cpp@{morpho\_filter.cpp}!binarizeData@{binarizeData}}
+\index{binarizeData@{binarizeData}!morpho\_filter.cpp@{morpho\_filter.cpp}}
+\doxysubsubsection{\texorpdfstring{binarizeData()}{binarizeData()}}
+{\footnotesize\ttfamily bool$\ast$$\ast$ binarize\+Data (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{morpho__filter_8cpp_a47d2e26c9b8781b0cd6ee2ef335be03e}\label{morpho__filter_8cpp_a47d2e26c9b8781b0cd6ee2ef335be03e}} 
+\index{morpho\_filter.cpp@{morpho\_filter.cpp}!determineThreshold@{determineThreshold}}
+\index{determineThreshold@{determineThreshold}!morpho\_filter.cpp@{morpho\_filter.cpp}}
+\doxysubsubsection{\texorpdfstring{determineThreshold()}{determineThreshold()}}
+{\footnotesize\ttfamily double determine\+Threshold (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{morpho__filter_8cpp_a19313315e1e6d1fc430db85bd2c2757a}\label{morpho__filter_8cpp_a19313315e1e6d1fc430db85bd2c2757a}} 
+\index{morpho\_filter.cpp@{morpho\_filter.cpp}!dilation@{dilation}}
+\index{dilation@{dilation}!morpho\_filter.cpp@{morpho\_filter.cpp}}
+\doxysubsubsection{\texorpdfstring{dilation()}{dilation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool$\ast$$\ast$ dilation (\begin{DoxyParamCaption}\item[{bool $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Structuring\+Element \&}]{selem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{morpho__filter_8cpp_a4038bd3b5022c056ae8f2d1314765a7a}\label{morpho__filter_8cpp_a4038bd3b5022c056ae8f2d1314765a7a}} 
+\index{morpho\_filter.cpp@{morpho\_filter.cpp}!dilation@{dilation}}
+\index{dilation@{dilation}!morpho\_filter.cpp@{morpho\_filter.cpp}}
+\doxysubsubsection{\texorpdfstring{dilation()}{dilation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double$\ast$$\ast$ dilation (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Structuring\+Element \&}]{selem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{morpho__filter_8cpp_ade12bae79aa395aa32c66019a4cb5bba}\label{morpho__filter_8cpp_ade12bae79aa395aa32c66019a4cb5bba}} 
+\index{morpho\_filter.cpp@{morpho\_filter.cpp}!erosion@{erosion}}
+\index{erosion@{erosion}!morpho\_filter.cpp@{morpho\_filter.cpp}}
+\doxysubsubsection{\texorpdfstring{erosion()}{erosion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool$\ast$$\ast$ erosion (\begin{DoxyParamCaption}\item[{bool $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Structuring\+Element \&}]{selem }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{morpho__filter_8cpp_ad1e9c55774c6a7d0ea2293f931f3f727}\label{morpho__filter_8cpp_ad1e9c55774c6a7d0ea2293f931f3f727}} 
+\index{morpho\_filter.cpp@{morpho\_filter.cpp}!erosion@{erosion}}
+\index{erosion@{erosion}!morpho\_filter.cpp@{morpho\_filter.cpp}}
+\doxysubsubsection{\texorpdfstring{erosion()}{erosion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double$\ast$$\ast$ erosion (\begin{DoxyParamCaption}\item[{double $\ast$$\ast$}]{data,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{Structuring\+Element \&}]{selem }\end{DoxyParamCaption})}
+
