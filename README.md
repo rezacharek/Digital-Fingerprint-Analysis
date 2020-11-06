@@ -24,63 +24,6 @@ You can navigate through the documentation for instance using firefox :
 firefox ../documentation/html/index.html
 ```
 
-
-## Git cheatsheet
-
-Copier le repertoire sur sa machine // Copy the directory on your computer
-
-`git clone "path given on line"`
-
-Si vous cassez tout git don't worry, on supprime son répertoire local et on
-reclone // if how have melted down the repo, no worries start again using :
-
-`rm -rf daf-bratva  && git clone git@gitlab.com:mlotta/daf-bratva.git`
-
-Pour récupérer le récupertoire distant // To get the directory whis is on the server :
-`git pull`
-
-Pour ajouter des fichiers à la liste de ceux qu'on veut effectivement modifier
-sur le répertoire distant, cad ceux qu'on veut mettre à jour avec un commit // To add files to the list of files you want to be updated online :
-
-`git add "file_name"
-`
-ou si on veut tout mettre sans se prendre la tete // or if you want to add all of them :
-
-`git add .`
-
-Pour valider cette mise à jour // to approve this update :
-
-`git commit -m "some comments"`
-
-Pour mettre en ligne sur le répertoire distant // To put on line on the directory which is on your laptop : 
-`git push`
-
-Donc a chaque fois qu'on veut mettre à jour les modifications qu'on a faite // To sum up, each time you want to modify smth :
-```
-git add .
-git commit -m "what i have changed"
-git pull
-git push
-```
-
-Un fichier `.gitignore` permet de lister tout les fichiers qu'on veut toujours
-ignorer, cad ceux qui sont sur notre machine mais qu'on ne veut pas mettre en
-ligne. Par exemple les fichiers assez lourd (on évite de mettre les fichiers
-lourd sur le répertoire genre image ou gros executable parce qu'il faut tout
-retraiter à chaque pull/push et c'est chiant) ou qui servent à rien.
-
-A n'importe quel moment, pour connaître le status des fichiers qu'on a changé et
-ce qui à changé sur le répertoire distant depuis notre dernier pull : `git status`
-
-A `.gitignore` file allows you to list all the files you always want
-ignore, ie those who are on our machine but we do not want to put
-line. For example, files that are quite heavy (we avoid putting heavy files
-heavy like pics or large executable because you would have to reprocess everything each pull / push and it's time/energy consuming) or those that are useless.
-
-At any time, to know the status of the files that we have changed and
-what has changed on the remote directory since our last pull: `git status`
-
-
 ## Opencv install
 
 You might want to install opencv on your computer for the project. As a warning,
