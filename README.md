@@ -1,5 +1,8 @@
 # Digital Fingerprint Analysis
 
+## Authors
+This project was completed by Maya Costantini, Matthias Lotta, Grégoire Lambert, Diana Farkhat and Roman Zacharek for our Master's coursework.
+
 ## Compiling
 
 To compile test executables :
